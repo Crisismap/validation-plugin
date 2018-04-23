@@ -1,0 +1,15 @@
+{
+  "name": "validation-plugin",
+  "version": "0.1.0",
+  "main": "validationPlugin.js",
+  "author": "Grigory Golikov gr.golikov@gmail.com",
+  "license": "MIT",
+  "scripts": {
+    "transpile": "npx babel validationPlugin-es6.js --watch --out-file validationPlugin.js"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1"
+  }
+}
