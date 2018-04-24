@@ -5,7 +5,9 @@
   "author": "Grigory Golikov gr.golikov@gmail.com",
   "license": "MIT",
   "scripts": {
-    "transpile": "npx babel validationPlugin-es6.js --watch --out-file validationPlugin.js"
+    "deploy": "npm run transpile && npm run deploy",
+    "transpile": "npx babel validationPlugin-es6.js --out-file validationPlugin.js",
+    "copy": "robocopy ./validationPlugin.js ../../Scanex/Geomixer-client-test/plugins/validationPlugin.js"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

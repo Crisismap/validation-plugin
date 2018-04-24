@@ -12,7 +12,7 @@
         afterViewer: function (params, map) {
 			if (window.nsGmx) {
                 if (params.layerId) {
-                    let layer = nsGmx.gmxMap.layersByID[layerId];
+                    let layer = nsGmx.gmxMap.layersByID[params.layerId];
 
                     console.log(layer);
 
